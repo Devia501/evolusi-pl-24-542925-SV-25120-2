@@ -8,6 +8,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   lint:
@@ -118,4 +119,4 @@ jobs:
       - name: Deploy frontend
         run: |
           echo "Deploying frontend to production..."
-          echo "Deploy step is simulated with echo only."
+          echo "Deployment is simulated with echo only."
